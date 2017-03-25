@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Feng Lab @ CFC"
 title_separator          : "-"
 name                     : "Feng Lab"
-description              : "An amazing website."
+description              : "Feng Lab website."
 url                      : "https://feng-lab.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "feng-lab/feng-lab.github.io"
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Linqing Feng"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Bioimage informatics, Neuroinformatics"
+  location         : "KIST"
+  email            : "feng@kist.re.kr"
   uri              :
   bitbucket        :
   codepen          :
@@ -105,6 +105,8 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  #google_scholar   : "HI-aV-4AAAAJ"
+  ORCID            : "0000-0002-5084-811X"
 
 
 # Reading Files
@@ -142,7 +144,6 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -245,6 +246,37 @@ defaults:
       share: true
       related: true
 
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+
 
 theme: minimal-mistakes-jekyll
 
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: references.bib
+  use_raw_bibtex_entry: true
+
+  sort_by: year
+  order: descending
+  group_by: none
+  group_order: descending
+
+  bibliography_list_tag: ul
+
+  # bibliography_list_tag: ul
+  repository: ./assets/papers
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details

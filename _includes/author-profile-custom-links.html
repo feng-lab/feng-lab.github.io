@@ -1,0 +1,23 @@
+<!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+{% if author.google_scholar %}
+        <li>
+          <a href="https://scholar.google.com/citations?user={{ author.google_scholar }}" itemprop="sameAs">
+            <i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i> Google Scholar
+          </a>
+        </li>
+{% endif %}
+
+{% if author.ORCID %}
+        <li>
+          <a href="https://orcid.org/{{ author.ORCID }}" itemprop="sameAs">
+            <i class="ai ai-fw ai-orcid" aria-hidden="true"></i> ORCID
+          </a>
+        </li>
+{% endif %}
