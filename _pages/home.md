@@ -2,6 +2,9 @@
 layout: single
 permalink: /
 author_profile: true
+header:
+  overlay_image: /assets/images/feng.jpg
+  caption: "Image credit: Joe Fluss"
 ---
 
 # Welcome to the Feng Lab
