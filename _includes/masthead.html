@@ -7,7 +7,7 @@
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }} <i class="fa fa-external-link-alt" aria-hidden="true"></i></a></li>
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
               <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
