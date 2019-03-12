@@ -26,7 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-scholar"
-  gem "jekyll-font-awesome-sass"
+  gem 'jekyll-fontawesome-svg'
 end
 
 

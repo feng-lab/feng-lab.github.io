@@ -186,7 +186,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-font-awesome-sass
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -195,7 +194,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-font-awesome-sass
 
 
 # Archives
@@ -283,7 +281,4 @@ scholar:
   details_dir:    bibliography
   details_layout: bibtex.html
   details_link:   Details
-
-font-awesome:
-  assets: true
   
